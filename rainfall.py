@@ -28,7 +28,7 @@ locations.append('용인')
 #locations.append('수원')
 
 """
-DB 정보
+DB 정보 예제
 DB Name : rainfall
 User : rainfall
 Password : rainfall
