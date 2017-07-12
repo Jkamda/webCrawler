@@ -84,8 +84,7 @@ def cycleDate(STARTDATE, ENDDATE) :
                         TEMPERATUER=str(row.find_all('td')[9].string) #온도
                         AWS_LOCATION=str(row.find_all('td')[18].string) #위치    
                         conn = connectInfo()
-                        insertData(conn,RAINFALL_DATE,AWS_NUM,AWS_NAME,AWS_LOCATION,RAINFALL,TEMPERATUER)
-                        print "파서 날짜 : " +  RAINFALL_DATE                        
+                        insertData(conn,RAINFALL_DATE,AWS_NUM,AWS_NAME,AWS_LOCATION,RAINFALL,TEMPERATUER)                                
             except :
                 pass                
         STARTDATE += timedelta(days=1)        
